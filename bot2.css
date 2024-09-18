@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+    overflow-y: auto;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.score {
+    font-size: 18px;
+    color: #777;
+}
+
+.wheel-section {
+    display: flex;
+    justify-content: center; /* تصویر را وسط چین می‌کند */
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #f0f0f0; /* پس‌زمینه برای بخش */
+    position: relative; /* برای کنترل دقیق‌تر موقعیت‌ها */
+}
+
+.wheel {
+    width: 85%; /* اندازه کوچکتر برای تصویر */
+    max-width: 350px;
+    height: auto;
+    display: block;
+    border-radius: 15px; /* گوشه‌های گرد برای مستطیل */
+    background-color: #515151; /* پس‌زمینه سفید برای تصویر */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* سایه بزرگ‌تر */
+    padding: 20px; /* پس‌زمینه بزرگتر */
+    margin-left: -20px; /* برای جابجایی اندک به چپ */
+}
+
+
+.payment-gateway {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.payment-gateway h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-item {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-item:hover {
+    background-color: #555;
+    color: #333;
+}
+.info-box {
+    width: 90%;
+    max-width: 400px;
+    background-color: #1b1b1b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: -10px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.score-section {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.wallet-section {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.connect-wallet-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #003dbd;
+}
+
+.balance-info {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+.balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.balance i {
+    color: #005eff; /* رنگ آیکون */
+    margin-right: 5px;
+}
+.info-box {
+    width: 90%;
+    max-width: 400px;
+    background-color: #1b1b1b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: -10px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.small-logo {
+    position: absolute;
+    right: 10px; /* فاصله از سمت راست */
+    top: 10px;   /* فاصله از بالای باکس */
+    width: 50px; /* عرض لوگو */
+    height: 50px; /* حفظ تناسب ابعاد لوگو */
+    z-index: 2;  /* قرار گرفتن روی محتوای دیگر */
+    border-radius: 50%;
+}
+.image-box {
+    width: 100%;
+    margin-top: 20px; /* فاصله از بالای صفحه */
+}
+
+.large-image {
+    width: 100%;
+    height: auto; /* حفظ تناسب ابعاد تصویر */
+    display: block;
+}
+
+.spin-text {
+    font-size: 16px;
+    color: #fff; /* رنگ متن سفید */
+    text-align: center;
+    margin-top: 10px; /* فاصله از باکس بالا */
+    width: 90%;
+    max-width: 600px; /* حداکثر عرض متن */
+    margin: 10px auto; /* مرکز کردن متن */
+}
+.wallet-section {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+}
+
+.connect-wallet-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #003dbd;
+}
+
+.wallet-options {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 60px; /* Adjust based on button size */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px); /* Adjust width based on padding */
+    background-color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.wallet-options .warning-message {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.wallet-options-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wallet-option {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wallet-icon {
+    width: 24px; /* Adjust size of icons */
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.wallet-option:hover {
+    background-color: #555;
+}

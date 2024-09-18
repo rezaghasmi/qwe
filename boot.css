@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.desktop-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loading-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.loading-animation {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+.progress-bar {
+    width: 90%;
+    max-width: 400px;
+    background: #333;
+    border: 2px solid #444;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #f39c12, #e74c3c);
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 16px;
+    color: gold;
+}
+
+.eagle {
+    width: 100px;
+    height: 100px;
+    background: url('eagle.png') no-repeat center center;
+    background-size: contain;
+    margin: 20px auto;
+    animation: eagle-fly 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.error-message {
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}

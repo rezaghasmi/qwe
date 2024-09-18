@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Design</title>
+    <link rel="stylesheet" href="bot2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo2.jpg" alt="Logo" class="logo">
+        </div>
+    </header>
+    <div class="info-box">
+        <div class="score-section">
+            <span class="score-title">10</span>
+            <span class="currency">$ENGLE</span>
+        </div>
+        <div class="wallet-section">
+            <button id="connect-wallet-btn" class="connect-wallet-btn"></button>
+            <div class="wallet-options" id="wallet-options">
+                <p class="warning-message">You can only have one active wallet in Engle at a time.</p>
+                <div class="wallet-options-container">
+                    <button class="wallet-option" data-type="telegram">
+                        <i class="fab fa-telegram-plane"></i> Telegram Wallet
+                    </button>
+                    <button class="wallet-option" data-type="tonkeeper">
+                        <img src="ton.png" alt="Tonkeeper" class="wallet-icon"> Tonkeeper
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="logo3.jpg" alt="Small Logo" class="small-logo">
+    </div>
+
+    <div class="image-box">
+        <a href="#"><img src="Wheel.jpg" alt="Large Image" class="large-image"></a>
+        <a href=""><p class="spin-text">Spin the wheel of fortune for a chance to win prizes up to 10 ton and 100 eagle currencies!</p></a>
+    </div>
+
+    <footer>
+        <a href="#home" class="footer-item">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a href="#rank" class="footer-item">
+            <i class="fas fa-trophy"></i> Rank
+        </a>
+        <a href="#task" class="footer-item">
+            <i class="fas fa-tasks"></i> Task
+        </a>
+        <a href="#referral" class="footer-item">
+            <i class="fas fa-share-alt"></i> Referral
+        </a>
+    </footer>
+
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+    <script src="bot1.js"></script>
+</body>
+</html>
